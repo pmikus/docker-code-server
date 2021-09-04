@@ -1,4 +1,4 @@
-[![Docker CI](https://github.com/pmikus/docker-code-server/actions/workflows/CI.yml/badge.svg)](https://github.com/pmikus/docker-code-serer/actions/workflows/CI.yml)
+[![Docker CI](https://github.com/pmikus/docker-code-server/actions/workflows/CI.yml/badge.svg)](https://github.com/pmikus/docker-code-server/actions/workflows/CI.yml)
 
 
 Docker image to deploy code-server.
