@@ -8,7 +8,7 @@ ENV SHELL=/bin/bash
 
 # Install unzip + rclone (support for remote filesystem)
 RUN sudo apt-get update \
- && sudo apt-get install unzip -y
+ && sudo apt-get install unzip -y \
  && curl https://rclone.org/install.sh | sudo bash
 
 # Install a VS Code extension:
