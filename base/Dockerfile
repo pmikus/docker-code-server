@@ -9,13 +9,15 @@ ENV SHELL=/bin/bash
 # Install unzip + rclone (support for remote filesystem)
 RUN sudo apt-get update \
  && sudo apt-get install unzip -y
-RUN curl https://rclone.org/install.sh | sudo bash
+ && curl https://rclone.org/install.sh | sudo bash
 
 # Install a VS Code extension:
 RUN code-server --install-extension eamodio.gitlens \
  && code-server --install-extension hashicorp.terraform \
  && code-server --install-extension ms-python.python \
- && code-server --install-extension robbowen.synthwave-vscode
+ && code-server --install-extension shan.code-settings-sync \
+ && code-server --install-extension robbowen.synthwave-vscode \
+ && code-server --install-extension github.github-vscode-theme
 
 # Port
 ENV PORT=8443
