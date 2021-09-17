@@ -1,8 +1,10 @@
+---
 name: Docker CD
 
 on:
   release:
-    types: [published]
+    types:
+      - published
 
 jobs:
   # Push image to GitHub Packages.
